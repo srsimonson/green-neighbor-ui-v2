@@ -1,0 +1,27 @@
+// Global font imports we always want accessible
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face {
+  font-family: 'Leafy';
+  font-weight: 5;
+  src: local('Leafy'), url('./assets/fonts/leafy.otf') format('opentype');
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url("./assets/images/bkg-forest-top.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+// Remove spinners from number inputs
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
