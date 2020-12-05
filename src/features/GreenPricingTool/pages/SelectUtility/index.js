@@ -14,7 +14,12 @@ const SelectUtility = () => {
     }
   }, [zip, dispatch]);
 
-  return <code style={{ color: 'white' }}>{JSON.stringify(utilities, undefined, 2)}</code>;
+  return (
+    <div style={{ background: 'white' }}>
+      <code>{JSON.stringify(utilities, undefined, 3)}</code>
+      <code>{JSON.stringify(location, undefined, 3)}</code>
+    </div>
+  );
 };
 
 export default SelectUtility;

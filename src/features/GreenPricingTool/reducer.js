@@ -12,6 +12,7 @@ const initialState = {
   isBusy: false,
   utilities: null,
   error: null,
+  location: undefined,
 };
 
 export default (state = initialState, { type, payload }) => {
