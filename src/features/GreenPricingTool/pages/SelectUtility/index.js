@@ -5,8 +5,7 @@ import { getUtilities } from '../../actions';
 
 const SelectUtility = () => {
   const dispatch = useDispatch();
-  const { utilities, error } = useSelector((store) => store.GreenPricingTool);
-
+  const { utilities, error, location } = useSelector((store) => store.GreenPricingTool);
   const { zip } = useParams();
 
   useEffect(() => {
