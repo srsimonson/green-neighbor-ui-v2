@@ -1,4 +1,4 @@
-import Axios from 'axios';
+import axios from 'axios';
 import { API } from 'src/constants';
 import logger from 'src/logger';
 
@@ -12,10 +12,10 @@ import {
 export const getUtilities = (zip) => async (dispatch) => {
   dispatch({ type: STARTED_GETTING_UTILITIES });
   try {
-    const response = await Axios.get(`${API}SelectUtility/${zip}`);
+    const response = await axios.get(`${API}SelectUtility/${zip}`);
     dispatch({ type: FINISHED_GETTING_UTILITIES, payload: response.data });
   } catch (error) {
-    logger.log(logger.debug);
+    logger.debug(error);
     dispatch({ type: ERROR_GETTING_UTILITIES, error });
   }
 };

@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getUtilities } from './actions';
+import { getUtilities } from '../../actions';
 
 const SelectUtility = () => {
   const dispatch = useDispatch();
-  const { utilities, error } = useSelector((store) => store.SelectUtility);
+  const { utilities, error } = useSelector((store) => store.GreenPricingTool);
 
   const { zip } = useParams();
 

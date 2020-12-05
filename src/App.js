@@ -7,8 +7,8 @@ import {
 } from 'react-router-dom';
 import './App.scss';
 import './assets/styles/_buttons.scss';
-import EnterZip from './features/EnterZip';
-import SelectUtility from './features/SelectUtility';
+import EnterZip from './features/GreenPricingTool/pages/EnterZip';
+import SelectUtility from './features/GreenPricingTool/pages/SelectUtility';
 import store from './store';
 
 const App = () => (
