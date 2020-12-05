@@ -4,10 +4,9 @@ import { useParams } from 'react-router-dom';
 import { getUtilities } from './actions';
 
 const SelectUtility = () => {
-  // const history = useHistory();
   const dispatch = useDispatch();
-  const reduxState = useSelector((store) => store);
-  console.log(reduxState);
+  const { utilities, error } = useSelector((store) => store.SelectUtility);
+
   const { zip } = useParams();
 
   useEffect(() => {
@@ -16,7 +15,7 @@ const SelectUtility = () => {
     }
   }, [zip, dispatch]);
 
-  return <div>{JSON.stringify(reduxState)}</div>;
+  return <code style={{ color: 'white' }}>{JSON.stringify(utilities, undefined, 2)}</code>;
 };
 
 export default SelectUtility;

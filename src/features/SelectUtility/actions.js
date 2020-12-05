@@ -13,7 +13,7 @@ export const getUtilities = (zip) => async (dispatch) => {
   dispatch({ type: STARTED_GETTING_UTILITIES });
   try {
     const response = await Axios.get(`${API}SelectUtility/${zip}`);
-    dispatch({ type: FINISHED_GETTING_UTILITIES, payload: response });
+    dispatch({ type: FINISHED_GETTING_UTILITIES, payload: response.data });
   } catch (error) {
     logger.log(logger.debug);
     dispatch({ type: ERROR_GETTING_UTILITIES, error });
