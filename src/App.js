@@ -7,7 +7,8 @@ import {
 } from 'react-router-dom';
 import './App.scss';
 import './assets/styles/_buttons.scss';
-import AboutPage from './features/GreenPricingTool/pages/AboutPage';
+import AboutPage from './features/GreenPricingTool/pages/AboutPage/AboutPage';
+import ContributePage from './features/GreenPricingTool/pages/ContributePage/ContributePage';
 import EnterZip from './features/GreenPricingTool/pages/EnterZip';
 import SelectUtility from './features/GreenPricingTool/pages/SelectUtility';
 import store from './store';
@@ -19,6 +20,7 @@ const App = () => (
         <Route exact path="/" component={EnterZip} />
         <Route path="/SelectUtility/:zip" component={SelectUtility} />
         <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/contribute" component={ContributePage} />
       </Switch>
     </BrowserRouter>
   </Provider>
