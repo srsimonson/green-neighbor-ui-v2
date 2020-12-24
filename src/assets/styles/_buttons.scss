@@ -1,29 +1,29 @@
-@import './colors';
-@import './fonts';
+@use './colors';
+@use './fonts';
 
 .button-default, .button-primary, .button-secondary, .button-negative, .button-cancel{
   outline: none;
   border: none;
   padding: 8px 24px;
-  box-shadow: 0 2px 2px -1px $color-shadow;
+  box-shadow: 0 2px 2px -1px colors.$shadow;
   font-size: 1rem;
   margin: 8px;
   border-radius: 8px;
   transition: all .2s;
-  background-color: $color-button-default-main;
-  font-family: $font-button;
+  background-color: colors.$button-default-main;
+  font-family: fonts.$button;
 }
 
 .button-default:hover, .button-primary:hover, .button-secondary:hover, .button-negative:hover {
-  background-color: $color-button-default-light;
-  box-shadow: 0 6px 6px -4px $color-shadow;
+  background-color: colors.$button-default-light;
+  box-shadow: 0 6px 6px -4px colors.$shadow;
   cursor: pointer;
 }
 
 .button-wire {
   outline: none;
   font-size: 1em;
-  font-family: $font-button;
+  font-family: fonts.$button;
   margin: 8px;
   padding: 8px 24px;
   text-shadow: 0 0 8px black;
@@ -43,28 +43,28 @@
 }
 
 .button-primary {
-  background-color: $color-primary;
-  color: $color-text-light;
+  background-color: colors.$primary;
+  color: colors.$text-light;
 }
 .button-primary:hover {
-  background-color: $color-primary-light;
-  color: $color-text-light;
+  background-color: colors.$primary-light;
+  color: colors.$text-light;
 }
 
 .button-secondary {
-  background-color: $color-button-secondary-main;
-  color: $color-text-light;
+  background-color: colors.$button-secondary-main;
+  color: colors.$text-light;
 }
 .button-secondary:hover {
-  background-color: $color-button-secondary-light;
-  color: $color-text-light;
+  background-color: colors.$button-secondary-light;
+  color: colors.$text-light;
 }
 
 .button-negative {
-  background-color: $color-button-negative-main;
-  color: $color-text-light;
+  background-color: colors.$button-negative-main;
+  color: colors.$text-light;
 }
 .button-negative:hover {
-  background-color: $color-button-negative-light;
-  color: $color-text-light;
+  background-color: colors.$button-negative-light;
+  color: colors.$text-light;
 }

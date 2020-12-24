@@ -10,7 +10,7 @@ import {
 
 const initialState = {
   isBusy: false,
-  utilities: null,
+  utilities: [],
   error: null,
   location: undefined,
 };

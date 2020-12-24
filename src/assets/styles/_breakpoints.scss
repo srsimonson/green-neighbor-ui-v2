@@ -1,0 +1,32 @@
+// Write for smallest size first,
+// accomodate larger. Mobile first styling.
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+// smallest devices should be default, no mixin
+
+@mixin screen-sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
