@@ -22,12 +22,16 @@ const EnterZip = () => {
     <div className={styles.spacingBox}>
       <div className={styles.container}>
         <div className={styles.zipBox}>
-          <h1>The Green Neighbor Challenge</h1>
-          <h2>Find green energy near your.</h2>
-          <label htmlFor="zip-input">
+          <h1 className={styles.largeHeader}>The Green Neighbor Challenge</h1>
+          <h2 className={styles.smallHeader}>Find green energy near your.</h2>
+          <label
+            htmlFor="zip-input"
+            className={styles.zipLabel}
+          >
             Enter your zip code to get started
           </label>
           <input
+            className={styles.zipInput}
             type="number"
             id="zip-input"
             value={zip}
@@ -36,7 +40,7 @@ const EnterZip = () => {
           />
           <button
             type="submit"
-            className="button-wire"
+            className={`${styles.submitButton} button-wire`}
             onClick={() => onZipSubmit(zip)}
           >
             Go

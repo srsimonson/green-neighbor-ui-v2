@@ -51,53 +51,53 @@
   justify-content: center;
   color: colors.$text-light;
   text-shadow: 0 0 4px black;
+}
 
-  h1, h2 {
-    animation: appear_step1 1s ease-in-out;
+.largeHeader, .smallHeader {
+  animation: appear_step1 1s ease-in-out;
+}
+
+.largeHeader {
+  font-family: fonts.$header;
+  font-size: 4em;
+  margin: 16px 32px;
+
+  @include breakpoints.screen-md {
+    font-size: 6em;
   }
+}
 
-  h1 {
-    font-family: fonts.$header;
-    font-size: 4em;
-    margin: 16px 32px;
+.smallHeader {
+  font-family: fonts.$main;
+  font-weight: lighter;
+  margin: 0 32px;
+  font-size: 1.5em;
+}
 
-    @include breakpoints.screen-md {
-      font-size: 6em;
-    }
+.zipLabel, .zipInput, .submitButton {
+  animation: appear_step2 1s ease-in;
+}
+
+.zipLabel {
+  margin: 32px 0 8px 0;
+  font-family: fonts.$main;
+
+  @include breakpoints.screen-md {
+    margin-top: 64px;
   }
+}
 
-  h2 {
-    font-family: fonts.$main;
-    font-weight: lighter;
-    margin: 0 32px;
-    font-size: 1.5em;
-  }
-
-  label, input, button {
-    animation: appear_step2 1s ease-in;
-  }
-
-  label {
-    margin: 32px 0 8px 0;
-    font-family: fonts.$main;
-
-    @include breakpoints.screen-md {
-      margin-top: 64px;
-    }
-  }
-
-  input {
-    background-color: rgba(255,255,255,.1);
-    backdrop-filter: blur(0px);
-    outline: none;
-    border: 2px solid white;
-    color: colors.$text-light;
-    font-size: 30px;
-    font-family: fonts.$header;
-    padding: 8px;
-    text-align: center;
-    border-radius: 4px;
-  }
+.zipInput {
+  background-color: rgba(255,255,255,.1);
+  backdrop-filter: blur(0px);
+  outline: none;
+  border: 2px solid colors.$text-light;
+  color: colors.$text-light;
+  font-size: 30px;
+  font-family: fonts.$header;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .linksBox {
