@@ -28,4 +28,11 @@
 li {
     font-family: fonts.$header;
     color: colors.$bkg-main;
+    float: left;
+    
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
 }

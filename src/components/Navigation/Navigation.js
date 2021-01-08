@@ -8,18 +8,22 @@ const Navigation = () => {
 
     return (
         <div>
-            <div>
-                <li> <button>x</button> Find Orgs</li>
-                <li> <button>x</button> Save Energy</li>
-                <li> <button>x</button> Shared Solar</li>
-                <li> <button>x</button> Take Action</li>
-                <li> <button>x</button> Rooftop Solar</li>
-                <li> <button>x</button> Write Your Rep</li>
-                <li> <button>x</button> About</li>
+            <ul>
+                <li> <button>1</button> Find Orgs</li>
+                <li> <button>2</button> Save Energy</li>
+                <li> <button>3</button> Shared Solar</li>
+                <li> <button>4</button> Take Action</li>
+                <li> <button>5</button> Rooftop Solar</li>
+                <li> <button>6</button> Write Your Rep</li>
+                <li> <button>7</button> About</li>
                 <li>
-                <button className={styles.banana}> <img className={styles.banana} src={banana}/> </button>
-                    banana</li>
-            </div>
+                    <button 
+                        className={styles.banana}> 
+                        <img className={styles.banana} src={banana}/> 
+                    </button>
+                    banana
+                </li>
+            </ul>
         </div>
     );
 };
