@@ -11,7 +11,6 @@ import {
   ERROR_GETTING_LOCATION,
 } from './constants';
 
-// eslint-disable-next-line import/prefer-default-export
 export const getUtilities = (zip) => async (dispatch) => {
   dispatch({ type: STARTED_GETTING_UTILITIES });
   try {

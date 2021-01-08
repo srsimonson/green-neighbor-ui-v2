@@ -1,0 +1,31 @@
+@use 'src/assets/styles/buttons';
+@use 'src/assets/styles/fonts';
+@use 'src/assets/styles/colors';
+
+.hidden { 
+    display: none 
+};
+
+.banana {
+    background: none;
+    border: none;
+    width: 50px;
+}
+
+.banana:hover {
+    transition: transform .2s;
+    transition-timing-function: cubic-bezier(.17,.67,.67,2);
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+}
+
+.banana:hover + .hidden {
+    display:block;
+   }
+
+li {
+    font-family: fonts.$header;
+    color: colors.$bkg-main;
+}
