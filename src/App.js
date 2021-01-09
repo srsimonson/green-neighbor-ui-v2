@@ -13,10 +13,12 @@ import ContributePage from './features/GreenPricingTool/pages/ContributePage/Con
 import EnterZip from './features/GreenPricingTool/pages/EnterZip';
 import SelectUtility from './features/GreenPricingTool/pages/SelectUtility';
 import store from './store';
+import Navigation from './components/Navigation/Navigation';
 
 const App = () => (
   <Provider store={store}>
     <BrowserRouter>
+    <Navigation />
       <Switch>
         <Route exact path="/" component={EnterZip} />
         <Route path="/SelectUtility/:zip" component={SelectUtility} />

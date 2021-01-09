@@ -1,0 +1,40 @@
+@use 'src/assets/styles/buttons';
+@use 'src/assets/styles/fonts';
+@use 'src/assets/styles/colors';
+
+.hidden { 
+    display: none;
+    padding-top: 30px;
+};
+
+.banana {
+    background: none;
+    border: none;
+    width: 50px;
+}
+
+.banana:hover {
+    transition: transform .15s;
+    transition-timing-function: cubic-bezier(.17,.67,.67,1.2);
+    &:hover {
+      transform: scale(1.5);
+      cursor: pointer;
+    }
+}
+
+.banana:hover + .hidden {
+    display:block;
+    font-size: x-large;
+    font-family: fonts.$header;
+    color: colors.$bkg-main;
+}
+
+li {
+    float: left;
+    padding-left: 50px;
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+}
