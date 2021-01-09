@@ -7,13 +7,13 @@
     padding-top: 30px;
 };
 
-.banana {
+.nav_button {
     background: none;
     border: none;
     width: 50px;
 }
 
-.banana:hover {
+.nav_button:hover {
     transition: transform .15s;
     transition-timing-function: cubic-bezier(.17,.67,.67,1.2);
     &:hover {
@@ -22,8 +22,8 @@
     }
 }
 
-.banana:hover + .hidden {
-    display:block;
+.nav_button:hover + .hidden {
+    display: block;
     font-size: x-large;
     font-family: fonts.$header;
     color: colors.$bkg-main;

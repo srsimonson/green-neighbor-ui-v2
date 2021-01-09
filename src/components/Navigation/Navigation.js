@@ -12,7 +12,7 @@ const Navigation = () => {
                 {['apple', 'banana', 'Find Orgs', 'Save Energy', 'Shared Solar', 'Take Action', 'Rooftop Solar', 'Write Your Rep', 'About']
                     .map(nav =>
                         <li>
-                            <button className={styles.banana}><img className={styles.banana} src={nav}/></button>
+                            <button className={styles.nav_button}><img className={styles.banana} src={nav}/></button>
                             <span className={styles.hidden}>{nav}</span>
                         </li>
                     ) 
